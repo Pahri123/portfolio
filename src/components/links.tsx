@@ -22,10 +22,11 @@ export default function Links() {
   ]
 
   return (
-    <div className="mr-auto mt-20 flex w-full flex-wrap items-center gap-10">
+    <div className="mr-auto mt-10 flex w-full flex-wrap items-center gap-5">
       {links.map((link, id) => {
         return (
-          <a target="_blank" key={id} href={link.href}>
+          <a className="border-border bg-secondary-background text-foreground shadow-shadow rounded-base font-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY cursor-pointer border-2 px-4 py-2 text-center text-sm transition-all hover:shadow-none sm:text-base" 
+          target="_blank" key={id} href={link.href}>
             <link.icon title="" />
           </a>
         )

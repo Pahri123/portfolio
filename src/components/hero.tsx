@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { SiGithub, SiGmail, SiLinkedin } from '@icons-pack/react-simple-icons'
+import Image from 'next/image'
 
 export default function Hero() {
   const scrollToWork = () => {
@@ -18,10 +19,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-screen items-center justify-center"
+      className="flex min-h-screen items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       <div className="w-full max-w-7xl">
-        <div className="grid items-center gap-12 md:grid-cols-2">
+        <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -109,11 +110,15 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-main/20 blur-3xl"></div>
-              <img
-                src="/avatar.jpg"
-                alt="Fakhrie Nabil"
-                className="relative h-64 w-64 rounded-full border-4 border-main/30 object-cover shadow-2xl md:h-80 md:w-80"
-              />
+              <div className="relative h-48 w-48 md:h-80 md:w-80">
+                <Image
+                  src="/avatar.jpg"
+                  alt="Fakhrie Nabil"
+                  fill
+                  className="rounded-full border-4 border-main/30 object-cover shadow-2xl"
+                  priority
+                />
+              </div>
             </div>
           </motion.div>
         </div>

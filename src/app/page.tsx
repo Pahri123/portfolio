@@ -4,37 +4,35 @@ import Experience from '@/components/sections/experience'
 import Certif from '@/components/sections/certif'
 import Projects from '@/components/sections/projects'
 import Hero from '@/components/hero'
+import Image from 'next/image'
 
 export default function MainPage() {
   return (
-    
     <div className="font-base">
       <Hero />
 
-      {/* About Section */}
       <section
         id="about"
-        className="flex min-h-screen items-center justify-center pt-12"
+        className="flex min-h-screen items-center justify-center px-4 pt-12 sm:px-6 lg:px-8"
       >
         <div className="w-full max-w-7xl">
-          {/* Responsive two-column layout: image left, text right (stack on small screens) */}
           <div className="mb-24 grid grid-cols-1 items-center gap-8 sm:grid-cols-12">
-            {/* Avatar - spans full width on small, left column on larger screens */}
             <div className="flex justify-center sm:col-span-4">
               <div className="relative">
-                {/* Radiance glow effect */}
                 <div className="absolute inset-0 rounded-2xl bg-main/20 blur-3xl"></div>
-
-                {/* Image */}
-                <img
-                  src="avatar2.jpg"
-                  alt="About Fakhrie"
-                  className="relative w-full max-w-md rounded-2xl border border-main/20 shadow-2xl"
-                />
+                <div className="relative w-full max-w-[300px] sm:max-w-md">
+                  <Image
+                    src="/avatar2.jpg"
+                    alt="About Fakhrie"
+                    width={400}
+                    height={400}
+                    className="rounded-2xl border border-main/20 shadow-2xl"
+                    priority
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Text content - spans remaining columns */}
             <div className="text-base sm:col-span-8 sm:text-lg">
               <div className="mb-4">
                 <p>
@@ -66,4 +64,10 @@ export default function MainPage() {
       <Projects />
     </div>
   )
+}
+
+// Add metadata export
+export const metadata = {
+  title: 'Fakhrie Nabil - Portfolio',
+  description: 'Web Developer & Data Scientist Portfolio',
 }

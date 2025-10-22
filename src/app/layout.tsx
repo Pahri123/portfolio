@@ -9,6 +9,8 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fakhrie Nabil',
+  description: 'Web Developer & Data Scientist Portfolio',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
 }
 
 export default function RootLayout({
@@ -19,12 +21,17 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html suppressHydrationWarning lang="en">
-        <body className={montserrat.className}>
-          <ThemeProvider attribute="class" disableTransitionOnChange>
+        <body className={`${montserrat.className} antialiased`}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
             <Nav />
-            <div className="text-foreground min-h-screen w-full">
+            <main className="text-foreground min-h-screen w-full">
               {children}
-            </div>
+            </main>
           </ThemeProvider>
         </body>
       </html>

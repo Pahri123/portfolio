@@ -25,7 +25,7 @@ export default function Projects() {
 
   return (
     <section id="work" className="pt-20 mb-5 flex min-h-screen items-center justify-center">
-      <div className="w-full max-w-7xl">
+      <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col gap-5"
+          className="flex flex-col gap-8 md:gap-5"
         >
           {PROJECTS.map((project, id) => (
             <motion.div
@@ -49,7 +49,7 @@ export default function Projects() {
               variants={projectItemVariants}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="border-border shadow-shadow rounded-base bg-main border-2 p-4 sm:p-5"
+              className="border-border shadow-shadow rounded-base bg-main border-2 p-3 sm:p-5"
             >
               <img
                 className="rounded-base border-border shadow-shadow h-auto w-full border-2"

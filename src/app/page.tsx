@@ -22,7 +22,7 @@ export default function MainPage() {
                 <div className="absolute inset-0 rounded-2xl bg-main/20 blur-3xl"></div>
                 <div className="relative w-full max-w-[300px] sm:max-w-md">
                   <Image
-                    src="/avatar2.jpg"
+                    src="/avatar2.webp"
                     alt="About Fakhrie"
                     width={400}
                     height={400}

@@ -1,6 +1,7 @@
 # Fakhrie Nabil's Portfolio
 
 This is a personal portfolio website built with Next.js, Tailwind CSS, and TypeScript. It showcases my projects, skills, and experience as a Junior Web Developer & Data Scientist.
+🌐 **Visit the live site:** [https://fakhrie.vercel.app/](https://fakhrie.vercel.app/)
 
 ## Getting Started
 
@@ -25,6 +26,6 @@ pnpm run dev
 
 ## Credits
 
-Thanks to [neobrutalism-templates/portfolio](https://github.com/neobrutalism-templates/portfolio/generate) for the template inspiration.
+Thanks to [neobrutalism-templates/portfolio](https://github.com/neobrutalism-templates/portfolio) for the template inspiration.
 
 ---

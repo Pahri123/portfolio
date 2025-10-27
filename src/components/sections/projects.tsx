@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import PROJECTS from '@/data/projects'
 
 export default function Projects() {
@@ -51,11 +52,12 @@ export default function Projects() {
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
               className="border-border shadow-shadow rounded-base bg-main border-2 p-3 sm:p-5"
             >
-              <img
+              <Image
                 className="rounded-base border-border shadow-shadow h-auto w-full border-2"
                 src={`${project.previewImage}`}
                 alt={project.name}
               />
+              
               <div className="text-main-foreground font-base mt-5">
                 <h2 className="font-heading text-xl sm:text-2xl">
                   {project.name}

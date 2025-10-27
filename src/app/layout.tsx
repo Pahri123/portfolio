@@ -4,6 +4,7 @@ import './globals.css'
 import Nav from '@/components/nav'
 import { ViewTransitions } from 'next-view-transitions'
 import { ThemeProvider } from '@/components/theme-provider'
+import ChatbaseScript from '@/components/chatbase-script'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             <main className="text-foreground min-h-screen w-full">
               {children}
             </main>
+            <ChatbaseScript />
           </ThemeProvider>
         </body>
       </html>

@@ -10,9 +10,9 @@ export default function Projects() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   }
 
   const projectItemVariants = {
@@ -20,23 +20,26 @@ export default function Projects() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6 }
-    }
+      transition: { duration: 0.6 },
+    },
   }
 
   return (
-    <section id="work" className="pt-20 mb-5 flex min-h-screen items-center justify-center">
+    <section
+      id="work"
+      className="mb-5 flex min-h-screen items-center justify-center pt-20"
+    >
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="font-heading mb-8 text-xl sm:text-2xl text-center"
+          className="font-heading mb-8 text-center text-xl sm:text-2xl"
         >
           Featured Projects
         </motion.h1>
-        
+
         <motion.div
           variants={projectVariants}
           initial="hidden"
@@ -49,15 +52,17 @@ export default function Projects() {
               key={id}
               variants={projectItemVariants}
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 17 }}
               className="border-border shadow-shadow rounded-base bg-main border-2 p-3 sm:p-5"
             >
               <Image
-                className="rounded-base border-border shadow-shadow h-auto w-full border-2"
-                src={`${project.previewImage}`}
+                src={project.previewImage}
                 alt={project.name}
+                width={800}
+                height={600}
+                className="rounded-base border-border shadow-shadow h-auto w-full border-2"
               />
-              
+
               <div className="text-main-foreground font-base mt-5">
                 <h2 className="font-heading text-xl sm:text-2xl">
                   {project.name}

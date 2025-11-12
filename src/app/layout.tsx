@@ -8,12 +8,12 @@ import ChatbaseScript from '@/components/chatbase-script'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+export const viewport = {
   title: 'Fakhrie Nabil',
   description: 'Web Developer & Data Scientist Portfolio',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  width: 'device-width',
+  initialScale: 1,
 }
-
 export default function RootLayout({
   children,
 }: Readonly<{

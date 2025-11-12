@@ -14,7 +14,7 @@ export default function Hero() {
 
   // Ganti dengan URL file CV kamu dari Google Drive (direct download)
   const resumeUrl =
-    'https://drive.google.com/uc?export=download&id=13xelvQTrvwooQ-fN85HjyeuwJMDcu3_E'
+    'https://drive.google.com/uc?export=download&id=147MkR0v-H5qcCEqbfggFMZl29-TC6WfL'
 
   return (
     <section

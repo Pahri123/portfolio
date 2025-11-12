@@ -14,13 +14,15 @@ import {
   SiPython,
   SiTensorflow,
   SiTableau,
-  SiLooker,
+  SiPandas,
+  SiDocker,
+  SiFlutter,
 } from '@icons-pack/react-simple-icons'
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
   [
     {
-      field: 'Web Development',
+      field: 'Full-stack Application Development',
       skills: [
         { skill: 'html', icon: SiHtml5 },
         { skill: 'css', icon: SiCss3 },
@@ -33,6 +35,8 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'php', icon: SiPhp },
         { skill: 'laravel', icon: SiLaravel },
         { skill: 'nodejs', icon: SiNodedotjs },
+        { skill: 'docker', icon: SiDocker },
+        { skill: 'flutter', icon: SiFlutter },
       ],
     },
     {
@@ -41,7 +45,7 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'python', icon: SiPython },
         { skill: 'tensorflow', icon: SiTensorflow },
         { skill: 'tableau', icon: SiTableau },
-        { skill: 'looker', icon: SiLooker },
+        { skill: 'pandas', icon: SiPandas },
       ],
     },
   ]

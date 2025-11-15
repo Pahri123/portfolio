@@ -15,7 +15,6 @@ import {
   SiTensorflow,
   SiTableau,
   SiPandas,
-  SiDocker,
   SiFlutter,
 } from '@icons-pack/react-simple-icons'
 
@@ -35,7 +34,6 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         { skill: 'php', icon: SiPhp },
         { skill: 'laravel', icon: SiLaravel },
         { skill: 'nodejs', icon: SiNodedotjs },
-        { skill: 'docker', icon: SiDocker },
         { skill: 'flutter', icon: SiFlutter },
       ],
     },

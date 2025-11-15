@@ -45,7 +45,7 @@ export default function Hero() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mb-6"
             >
-              Web Developer & Data Scientist @Bandung, West Java
+              Data Scientist, Web & Mobile Dev @Bandung, West Java
             </motion.h2>
 
             {/* Action Buttons */}
